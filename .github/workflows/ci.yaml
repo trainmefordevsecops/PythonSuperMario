@@ -33,9 +33,10 @@ jobs:
           print("main.py imported successfully ✅")
 
       - name: SonarQube Scan
-        uses: sonarsource/sonarqube-scan-action@v2
+        uses: sonarsource/sonarcloud-github-action@master
         with:
-          projectBaseDir: .
+          projectKey: my-python-project
+          organization: DevSecOps
+          projectName: My Python Project          
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}          
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}        
