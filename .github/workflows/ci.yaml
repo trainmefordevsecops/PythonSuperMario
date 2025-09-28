@@ -36,7 +36,7 @@ jobs:
         uses: sonarsource/sonarcloud-github-action@master
         with:
           projectKey: my-python-project
-          organization: DevSecOps
+          organization: trainmefordevsecops
           projectName: My Python Project          
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}        
