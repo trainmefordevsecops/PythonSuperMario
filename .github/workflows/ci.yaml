@@ -2,9 +2,9 @@ name: Python Pygame CI (container python:3.7)
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   pull_request:
-    branches: ["main"]
+    branches: ["master"]
   workflow_dispatch:
 
 jobs:
